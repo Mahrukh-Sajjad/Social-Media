@@ -1,7 +1,7 @@
 # 🌐 Social Media Application  
 
-This is a **Social Media Web Application** built with **React (frontend)**, **Node.js + Express (backend)**, and **MongoDB (database)**.  
-It allows users to register, log in, create posts, and interact with other users. Passwords are securely stored using **bcrypt.js**.  
+This is a ** AI Powered Social Media Web Application** built with **React (frontend)**, **Node.js + Express (backend)**, and **MongoDB (database)**.  
+It allows users to register, log in, upload images create captions using AI and create post. Passwords are securely stored using **bcrypt.js**.  
 
 ---
 
@@ -28,7 +28,7 @@ It allows users to register, log in, create posts, and interact with other users
 - MongoDB + Mongoose  
 - bcrypt.js  
 - Multer (for file uploads like profile pictures / post images)  
-
+- gemini api(to create caption for images uploaded by user)
 ---
 
 ## 🔒 Password Security with bcrypt.js  
