@@ -1,0 +1,38 @@
+.container {
+  background: url("https://images.unsplash.com/photo-1617957689222-9f82a7f243da?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginform {
+  height: 400px;
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.container .loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container .loginform form input {
+  width: 300px;
+  padding: 10px;
+}
+
+.container .loginform form button {
+  background-color: rgb(104, 104, 238);
+  padding: 8px;
+  color: azure;
+}

@@ -1,0 +1,36 @@
+.main {
+  background: url("https://plus.unsplash.com/premium_photo-1701509664703-d9f2a644ff68?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  min-height: 100vh;
+
+  background-position: center;
+}
+.main .createPost {
+  padding: 10px;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgb(231, 203, 203);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: center;
+}
+.main .createPost .adding {
+  display: flex;
+  gap: 10px;
+}
+
+.main .createPost .add {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.main .createPost .btn button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  color: black;
+}
