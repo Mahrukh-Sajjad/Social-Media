@@ -14,7 +14,7 @@ const Displayposts = ({ posts, user1 }) => {
               <FaUserCircle size={25} />
             </div>
             <h4 className="username" style={{ fontSize: "15px" }}>
-              {user1.username}
+              {user1?.username}
             </h4>
           </div>
 

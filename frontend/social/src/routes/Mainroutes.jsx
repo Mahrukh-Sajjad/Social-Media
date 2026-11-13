@@ -11,7 +11,7 @@ const Mainroutes = () => {
   const [user1, setuser1] = useState(null);
   return (
     <Routes>
-      <Route path="/" element={<Login setuser1={setuser1} />} />
+      <Route path="/" element={<Login setuser1={setuser1} user1={user1} />} />
       <Route path="/register" element={<Register />} />
       <Route
         path="/posts"

@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const Login = ({ setuser1 }) => {
+const Login = ({ setuser1, user1 }) => {
   const navigate = useNavigate();
 
   let moveToRegister = () => {
@@ -19,18 +19,21 @@ const Login = ({ setuser1 }) => {
         user,
         {
           withCredentials: true,
-        }
+        },
       );
       console.log("user loged in successfully", res);
       console.log(res.data.user);
       setuser1(res.data.user);
+      console.log(user1);
 
       navigate("/posts");
     } catch (error) {
       console.error("❌ login error:", error.response?.data || error.message);
     }
   };
-
+  useEffect(() => {
+    console.log("Updated user1:", user1);
+  }, [user1]);
   const {
     register,
     handleSubmit,
@@ -45,7 +48,7 @@ const Login = ({ setuser1 }) => {
             <input
               type="text"
               {...register("username", { required: "username is required" })}
-              placeholder="Enter your email"
+              placeholder="Enter your username"
             />
             {errors.username && <p>{errors.username.message}</p>}
           </div>
